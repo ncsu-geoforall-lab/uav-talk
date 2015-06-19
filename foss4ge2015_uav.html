@@ -1,0 +1,140 @@
+<section> 
+<h2>Flow analysis using sUAS and lidar data</h2>
+    <h4 style="margin-top: 2em"> Helena Mitasova, Anna Petrasova, Vaclav Petras, Justyna Jeziorska, Thomas Zajkowski</h4>
+    <h4 style="margin-top: 1em">North Carolina State University, Raleigh, NC</h4>
+    <h4> Center for Geospatial Analytics, 
+         Department of Marine, Earth and Atmospheric Sciences, 
+         NextGen Air Transportation </h4>
+    <h4>Wroclaw University, Poland</h4>
+<p>
+</section>
+
+<section>
+    <h3>Advances in 3D mapping</h3>
+<ul>
+<li>Lidar and sUAS: increased capacity to
+map 3D landscapes and assess the change on (almost) continuous basis
+<li>Improved prediction of flooding and surface water flow
+</ul>
+<p>
+    <img height="200" src="img/mapping.jpg">
+<!--
+    <img height="150" src="img/WRAL_liftoff2.png">
+    <img height="150" src="img/ngat2_ortho02m_3dsmall.jpg">
+-->
+</section>
+
+<section>
+    <h3>Study site</h3>
+NCSU experimental farms: fields, service roads, forest patches and built structures.
+Surveyed by airborne lidar for floodplain mapping and county planning: 2001, 2013, 2015
+Research and development test area for sUAS technologies 
+<p>
+    <img height="300" src="img/Raleigh.jpg">
+    <img height="300" src="img/lw_farms_google.jpg">
+</section>
+
+<section>
+    <h3>Lidar data</h3>
+Lidar survey by Leica ALS-70, multiple return point cloud with point density XXpts/m
+DEM and DSM interpolated at 0.3m resolution
+<p>
+show the entire DSM and location of UAS survey
+    <img height="200" src="img/mapping.jpg">
+</section>
+
+<section>
+    <h3>UAS data acquisition</h3>
+<p>
+<ul>
+<li>NGAT Trimble UX5 system at NCSU Lake Wheeler experimental farms
+<li> Orthophoto (3cm res.) draped over a Digital Surface Model (DSM, 15cm res.)
+</ul>
+<p>
+    <img width=15% src="img/WRAL_liftoff2.png"> &nbsp;
+    <img width=35% src="img/ngat2_ortho02m_3dsmall.jpg">
+    <img width=35% src="img/ngat2_dem02m_3d.jpg">
+</section>
+
+<section>
+    <h3>UAS data properties</h3>
+<p>
+<ul>
+<li> info from report - 9 images per tile, error XX cm
+<li> processed by agisoft and trimble, agisoft bowl effect
+<li> 12 GCP to improve accuracy 
+</ul>
+<p>
+    <img width=45% src="img/errorimg.png">
+    <img width=45% src="img/DSM_comparison_NGAT_Agisoft.pdf">
+</section>
+
+<section>
+    <h3>Lidar and UAS data comparison</h3>
+<p>
+<ul>
+<li> lidar and uas difference maps, mean/median difference in open field
+<li> reflects also changes between 2013 and 2014
+</ul>
+<p>
+    <img width=15% src="img/WRAL_liftoff2.png"> &nbsp;
+    <img width=35% src="img/ngat2_ortho02m_3dsmall.jpg">
+    <img width=35% src="img/ngat2_dem02m_3d.jpg">
+</section>
+
+<section>
+    <h3>UAS data acquisition</h3>
+<p>
+<ul>
+<li>NGAT Trimble UX5 system at NCSU Lake Wheeler experimental farms
+<li> Orthophoto (3cm res.) draped over a Digital Surface Model (DSM, 15cm res.)
+</ul>
+<p>
+    <img width=15% src="img/WRAL_liftoff2.png"> &nbsp;
+    <img width=35% src="img/ngat2_ortho02m_3dsmall.jpg">
+    <img width=35% src="img/ngat2_dem02m_3d.jpg">
+<p>Data acquired by NCSU NGAT, processed by Justyna Jeziorska, U. Wroclaw</p>
+</section>
+
+<section>
+    <h3 style="margin-bottom: 1em">UAS DSM and water flow modeling  </h3>
+<p>
+<ul>
+<p><li>DSM of tilled fields at NCSU Lake Wheeler experimental farms
+<p><li>Simulated surface water depth captures flow redirection by tillage
+</ul>
+<p>
+<br>
+    <img height=480 src="img/ngat2_dem02m_3d.jpg"> 
+    &nbsp; &nbsp; &nbsp; &nbsp;
+    <img height=400 src="img/ngat2_simweflowdepth_3dsm.jpg">
+<!--    <img height=200 src="img/diffmap_uav2_lidg.png">-->
+</section>
+
+<section>
+    <h2 style="margin-bottom: 1em">Spatiotemporal modeling of processes </h2>
+<p>
+   Path sampling method for solving the flow continuity equations
+<p>
+    <img height="300" src="img/balsam_sideimg.png"> &nbsp; &nbsp; &nbsp; &nbsp;
+    <img height="400" src="img/fanimwalk.gif"> &nbsp; &nbsp; &nbsp; &nbsp;
+    <img height="400" src="img/fanimhhcolp.gif">
+</section>
+
+<section>
+    <h2>NCSU OSGeoREL</h2>
+    <h3>geospatial.ncsu.edu/osgeorel/</h3>
+<p>
+<ul>
+<p><li>NCSU Open Source Geospatial Research and Education Laboratory
+<p><li>Member of Geo4all initiative: global network for foss4g education</li>
+<p><li>91 labs on all continents</li>
+<p><li>NCSU NA leading lab: GRASS GIS development, courses, research projects </li>
+<p><li>GitHub: https://github.com/ncsu-osgeorel
+</ul>
+<p>
+    <img height="500" src="img/osgeorel_courses.jpg">
+&nbsp; &nbsp; &nbsp; &nbsp;
+    <img height="500" src="img/osgeorel_videos.jpg">
+</section>
+
