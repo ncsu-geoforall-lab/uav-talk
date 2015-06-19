@@ -1,5 +1,5 @@
 ./build-slides.py --outdir=build \
-    --title="Mapping gradient fields of landform migration using an&nbsp;open science approach" \
+    --title="Flow analysis using sUAS and lidar data" \
     --meta-description="North Carolina State University, Department of Marine, Earth and Atmospheric Sciences, Graduate Student Seminar" \
-    --meta-author="Vaclav Petras" \
-    title.html template-slides.html
+    --meta-author="Helena Mitasova, Vaclav Petras" \
+   title.html template-slides.html foss4ge2015_uav.html
