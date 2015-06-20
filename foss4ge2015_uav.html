@@ -51,8 +51,8 @@ map 3D landscapes and assess the change on (almost) continuous basis
 <section>
     <h3>sUAS data </h3>
 <ul>
-<li> NGAT Trimble UX5 system 
-<li> Orthophoto (0.03m res.) and Digital Surface Model (DSM, 0.18m res.)
+<li> NGAT Trimble UX5 system, flying at 138m, camera 4900 x 3200 
+<li> Orthophoto (0.04 m res.) and Digital Surface Model (DSM, 0.18 m res, 172 pts/m<sup>2</sup>.)
 <li> Repeated surveys (bi-weekly) for crop growth monitoring
 </ul>
 <p>
@@ -65,14 +65,16 @@ map 3D landscapes and assess the change on (almost) continuous basis
     <h3>sUAS data properties</h3>
 <p>
 <ul>
-<li> info from report - 9 images per tile, error XX cm
+<li> image overlap > 9, almost 1 mil tie points
 <li> processed by agisoft and trimble
 <li> 12 GCP to improve accuracy 
 </ul>
 <p>
-    <img width=10%% src="img/errorlg.png">
-    <img width=35% src="img/errorimg.png">
-    <img width=45% src="img/GCP_imagery.jpg">
+    <img height=150 src="img/errorlg.png">
+    <img width=300 src="img/errorimg.png">
+    <img width=300 src="img/GCP_imagery.jpg">
+<p>
+<font size=2> distribution of vertical and horizontal error, avg. camera error 0.3,1.9,0.6 m</font>
 </section>
 
 <section>
@@ -94,13 +96,47 @@ map 3D landscapes and assess the change on (almost) continuous basis
 <li> reflects also changes between 2013 and 2014
 </ul>
 <p>
-    <img width=15% src="img/WRAL_liftoff2.png"> &nbsp;
-    <img width=35% src="img/ngat2_ortho02m_3dsmall.jpg">
-    <img width=35% src="img/ngat2_dem02m_3d.jpg">
+   <img height=300 src="img/diffmap_uav2_lidg.png">
 </section>
 
 <section>
-    <h3 style="margin-bottom: 1em">UAS DSM and water flow modeling  </h3>
+    <h3>Watershed analysis based on lidar DEM  </h3>
+<ul>
+<li> LCP MFD flowtracing for watershed boundaries and streams
+<li> shows the watershed extending beyond UAV mapped area
+<li> improved representation of streams 
+</ul>
+    <img height=400 src="img/lidar_basins_image.jpg">
+    <img height=400 src="img/stream_extraction_lidarc.png">
+</section>
+
+<section>
+    <h3>Watershed analysis based on sUAS DSM </h3>
+<ul>
+<li>LCP MFD flowtracing - includes dispersed water but no accumulated water in depressions
+<li>watershed boundaries?
+</ul>
+<p>
+<br>
+    <img height=480 src="img/ngat2_dem02m_3d.jpg">
+    &nbsp; &nbsp; &nbsp; &nbsp;
+    <img height=400 src="img/ngat2_simweflowdepth_3dsm.jpg">
+</section>
+
+<section>
+    <h3>Water flow modeling using sUAS DSM </h3>
+<p>
+<ul>
+<p><li>DSM of tilled fields at NCSU Lake Wheeler experimental farms
+<p><li>Simulated surface water depth captures flow redirection by tillage
+</ul>
+<p>
+    <img height=400 src="img/ngat2_simweflowdepth_3dsm.jpg">
+</section>
+`
+
+<section>
+    <h3>Watershed analysis on fused UAS DSM  and lidar DEM </h3>
 <p>
 <ul>
 <p><li>DSM of tilled fields at NCSU Lake Wheeler experimental farms
