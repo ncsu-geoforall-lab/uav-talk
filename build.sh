@@ -2,4 +2,4 @@
     --title="Flow analysis using sUAS and lidar data" \
     --meta-description="North Carolina State University, Department of Marine, Earth and Atmospheric Sciences, Graduate Student Seminar" \
     --meta-author="Helena Mitasova, Vaclav Petras" \
-   title.html template-slides.html foss4ge2015_uav.html
+    foss4ge2015_uav.html
