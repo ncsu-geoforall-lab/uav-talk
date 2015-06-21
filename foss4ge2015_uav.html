@@ -65,9 +65,9 @@ map 3D landscapes and assess the change on (almost) continuous basis
     <h3>sUAS data properties</h3>
 <p>
 <ul>
-<li> image overlap > 9, almost 1 mil tie points
-<li> processed by agisoft and trimble
-<li> 12 GCP to improve accuracy 
+<li> image overlap > 9, almost 1 million tie points
+<li> processed by AGISOFT and Trimble
+<li> 12 GCPs installed to improve accuracy 
 </ul>
 <p>
     <img height=150 src="img/errorlg.png">
@@ -81,22 +81,34 @@ map 3D landscapes and assess the change on (almost) continuous basis
     <h3>sUAS data comparison</h3>
 <p>
 <ul>
-<li> agisoft without and with GCPs
-<li> agisoft and trimble comparison, bowl effect
+<li> AGISOFT without and with GCPs 
+<li> AGISOFT and Trimble comparison, bowl effect and swath shifts
 </ul>
 <p>
     <img width=45% src="img/DSM_comparison_NGAT_Agisoft.pdf">
 </section>
 
 <section>
-    <h3>Lidar and UAS data comparison</h3>
+    <h3>Lidar and sUAS data comparison</h3>
 <p>
 <ul>
 <li> lidar and uas difference maps, mean/median difference in open field
-<li> reflects also changes between 2013 and 2014
+<li> reflects mapping errors but also terrain changes between 2013 and 2014
+<li> REPLACE below map (dif demo flight uas and lidar - shows bowl effect)
+with a map showing diff between lidar and improved sUAS processed with GCP 
 </ul>
 <p>
    <img height=300 src="img/diffmap_uav2_lidg.png">
+</section>
+
+<section>
+    <h3>LCP MFD flowrouting  </h3>
+<ul>
+<li> least cost path  MFD method - needed for DSMs with many true depressions
+<li> REPLACE IMAGE some explanation here, ref to MM paper
+<li> improved representation of streams
+</ul>
+    <img height=200 src="img/stream_extraction_lidarc.png">
 </section>
 
 <section>
@@ -106,8 +118,8 @@ map 3D landscapes and assess the change on (almost) continuous basis
 <li> shows the watershed extending beyond UAV mapped area
 <li> improved representation of streams 
 </ul>
-    <img height=300 src="img/lid_watershed_accum.jpg">
-    <img height=300 src="img/lidar_basins_image.jpg">
+    <img height=250 src="img/lid_watershed_accum.jpg">
+    <img height=250 src="img/lidar_basins_image.jpg">
     <img height=200 src="img/stream_extraction_lidarc.png">
 </section>
 
@@ -115,50 +127,79 @@ map 3D landscapes and assess the change on (almost) continuous basis
     <h3>Watershed analysis based on sUAS DSM </h3>
 <ul>
 <li>LCP MFD flowtracing - includes dispersed water but no accumulated water in depressions
-<li>watershed boundaries?
+(add img)
+<li>watershed boundaries (color) compared with lidar (lines)
 </ul>
 <p>
-<br>
-    <img height=480 src="img/ngat2_dem02m_3d.jpg">
-    &nbsp; &nbsp; &nbsp; &nbsp;
-    <img height=400 src="img/ngat2_simweflowdepth_3dsm.jpg">
+    <img width=50% src="img/trimsh_lid_wshdbound500k.jpg">
 </section>
 
 <section>
-    <h3>Water flow modeling using sUAS DSM </h3>
+    <h3>LCP MFD flowaccumulation: lidar, sUAS </h3>
 <p>
 <ul>
-<p><li>DSM of tilled fields at NCSU Lake Wheeler experimental farms
-<p><li>Simulated surface water depth captures flow redirection by tillage
+<p><li>level of detail and noise influence the LCP MFD flowrouting (0.3m, 0.3m, 0.18m)
+<p><li>Tillage impact can be captured directly, based on microtopography captured by sUAS 
 </ul>
 <p>
-    <img height=400 src="img/ngat2_simweflowdepth_3dsm.jpg">
+    <img width=90% src="img/flowaccum_lid_ngat_trimb_zoom.jpg">
 </section>
-`
 
 <section>
     <h3>Watershed analysis on fused UAS DSM  and lidar DEM </h3>
 <p>
 <ul>
-<p><li>DSM of tilled fields at NCSU Lake Wheeler experimental farms
-<p><li>Simulated surface water depth captures flow redirection by tillage
+<li>patch or reinterpolate the fused DSM at 0.2 or 0.3m resolution
+<li> compare results, show smooth flow along the border of the patched area
+<li> ADD FIGURE
 </ul>
 <p>
 <br>
-    <img height=480 src="img/ngat2_dem02m_3d.jpg"> 
+   <img height=200 src="img/diffmap_uav2_lidg.png">
+</section>
+
+<section>
+    <h3>Path sampling method for flow simulations </h3>
+<p>
+   Robust stochastic method for rough surfaces
+<p>
+    <img width=40% src="img/fanimwalk.gif"> &nbsp; &nbsp; &nbsp; &nbsp;
+    <img width=40% src="img/fanimhhcolp.gif">
+</section>
+
+<section>
+    <h3>Simulated water depth on sUAS DSM </h3>
+<p>
+<ul>
+<li>Simulated surface water depth captures flow redirection by tillage
+<li>Shifts between swaths on Trimble processed DSM leads to artificial flow pattern
+</ul>
+<p>
+<br>
+    <img width=40% src="img/trimb_depth120.jpg">
     &nbsp; &nbsp; &nbsp; &nbsp;
-    <img height=400 src="img/ngat2_simweflowdepth_3dsm.jpg">
+    <img width=40% src="img/ngat2_simweflowdepth_3dsm.jpg">
 <!--    <img height=200 src="img/diffmap_uav2_lidg.png">-->
 </section>
 
 <section>
-    <h2 style="margin-bottom: 1em">Spatiotemporal modeling of processes </h2>
+    <h3>Simulated water depth on sUAS DSM </h3>
 <p>
-   Path sampling method for solving the flow continuity equations
+<ul>
+<li> Flow redirection by tillage, dispersion and accumulation
+</ul>
 <p>
-    <img height="300" src="img/balsam_sideimg.png"> &nbsp; &nbsp; &nbsp; &nbsp;
-    <img height="400" src="img/fanimwalk.gif"> &nbsp; &nbsp; &nbsp; &nbsp;
-    <img height="400" src="img/fanimhhcolp.gif">
+<br>
+    <img height=350 src="img/anim_water03m.gif">
+</section>
+
+<section>
+    <h3>Conclusions </h3>
+<p>
+<ul>
+<li> GCP crucial for proper DSM geometry
+<li> High level of detail requires robust flowrouting that can handle depressions
+</ul>
 </section>
 
 <section>
@@ -168,7 +209,6 @@ map 3D landscapes and assess the change on (almost) continuous basis
 <ul>
 <p><li>NCSU Open Source Geospatial Research and Education Laboratory
 <p><li>Member of Geo4all initiative: global network for foss4g education</li>
-<p><li>91 labs on all continents</li>
 <p><li>NCSU NA leading lab: GRASS GIS development, courses, research projects </li>
 <p><li>GitHub: https://github.com/ncsu-osgeorel
 </ul>
