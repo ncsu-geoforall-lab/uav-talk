@@ -163,200 +163,208 @@
 
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
-<section>
-    <h2>Template for creating slides for NCSU OSGeoREL courses</h2>
-    <h3>a title slide</h3>
-    <h3 style="margin-top: 0.5em">
-        Vaclav Petras</h3>
-    <p class="title-foot">
-        <a href="http://www.ncsu.edu/" title="North Carolina State University">NCSU</a>
-        <a href="http://geospatial.ncsu.edu/osgeorel/" title="NCSU OSGeo Research and Education Laboratory">OSGeoREL</a>
-        at
-        <a href="http://geospatial.ncsu.edu/" title="Center for Geospatial Analytics">Center for Geospatial Analytics</a>
-        <br>
-    </p>
-    <p>September, 2014</p>
-</section>
-<!-- This is a generated file. Do not edit. -->
-<section class="textimg">
-    <h2>Possible layouts in the left-right template</h2>
-    <ul>
-        <li>text on left, image on right</li>
-        <li>image on right, text on left</li>
-        <li>text can be:
-            <ul>
-                <li><code>p</code></li>
-                <li><code>ul</code></li>
-                <li><code>ol</code></li>
-            </ul>
-        </li>
-        <li>image can be:
-            <ul>
-                <li><code>img</code></li>
-                <li><code>video</code></li>
-                <li><code>iframe</code>
-                    <ul>
-                        <li>Vimeo video</li>
-                        <li>YouTube video</li>
-                        <li>any web page</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-    <img src="img/elevation.png">
-</section>
-<section class="imgtext">
-    <h2>Applying left-right layout</h2>
-    <ul>
-        <li>set <code>section</code> element class to:
-            <ul>
-                <li><code>imgtext</code> for image on left</li>
-                <li><code>textimg</code> for image on right</li>
-            </ul>
-        </li>
-        <li>example of setting a class:
-            <pre>&lt;section class="imgtext"&gt;</pre>
-        </li>
-    </ul>
-    <img src="img/elevation.png">
-</section>
-<section class="imgtext">
-    <h2>Details about left-right template</h2>
-    <ul>
-        <li>
-            difference between having image on right or left is in the class, not the order
-            <ul>
-                <li>but perhaps it is better to keep the order also in the code, not only by styles</li>
-                <li>anyway, when changing the layout to the other one, it is enough just to change the class</li>
-            </ul>
-        </li>
-    </ul>
-    <img src="img/elevation.png">
-</section>
-<section class="imgtext">
-    <h2>Details about left-right template</h2>
-    <img src="img/elevation.png">
-    <ul>
-        <li>vertical size of text or image is not limited which means that one has to keep the right ratio</li>
-        <li>there are always just two elements under the <code>section</code> element</li>
-        <li>
-            any heading level can be used
-            <ul>
-                <li>heading element is not involved in the layout</li>
-            </ul>
-        </li>
-    </ul>
-</section>
-<section class="imgtext">
-    <h2>Image size in left-right template</h2>
-    <ul>
-        <li>the width:height ratio should be 9:10</li>
-        <li>square image (1:1) is safe way</li>
-    </ul>
-    <img src="img/elevation.png">
-</section>
-<section class="imgtext">
-    <h2>Disadvantages of left-right template</h2>
-    <ul>
-        <li>text is pushed</li>
-        <li>to the left/right</li>
-        <li>if the lines are</li>
-        <li>short</li>
-    </ul>
-    <img src="img/elevation.png">
-</section>
-<section class="imgtext">
-    <h2>Vimeo video as <code>iframe</code></h2>
-    <h3>GRASS GIS 7: your reliable geospatial number cruncher &mdash; Markus Neteler</h3>
-    <!-- using a bit lighter green color for vimeo then for headings -->
-    <iframe src="http://player.vimeo.com/video/106874424?color=00AA00" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <p>
-        GRASS&nbsp;GIS looks
-        back to the longest development history in the FOSS4G community.
-        Having been available for 30 years, a lot of innovation has been
-        put into the new GRASS&nbsp;GIS&nbsp;7 release...
-    </p>
-</section>
-<section>
-    <h2>Left-right layout with arbitrary elements</h2>
-    <div class="left">
-        <p>
-            Left
-        <ul>
-            <li>set class left for the element which should be on left</li>
-            <li>any element be used</li>
-            <li>common choice is <code>div</code> element which then contains more elements</li>
-        </ul>
-    </div>
-    <div class="right">
-        <p>
-            Right-aligned
-        <ul>
-            <li>set class right for the element which should be on right</li>
-            <li>the right element can be the same as left one or different</li>
-            <li>text is still aligned to the left</li>
-        </ul>
-    </div>
-</section>
-<section>
-    <h2>Left-right test slide</h2>
-    <div class="left" style="background-color: yellow;">class="left"</div>
-    <div class="right" style="background-color: green;">class="right"</div>
-</section>
-<!--
-<section>
-    <h2>Top-bottom test slide</h2>
-    <div class="top" style="background-color: yellow;">class="top"</div>
-    <div class="bottom" style="background-color: green;">class="bottom"</div>
-</section>
--->
-<!-- This is a generated file. Do not edit. -->
 <section> 
 <h2>Flow analysis using sUAS and lidar data</h2>
     <h4 style="margin-top: 2em"> Helena Mitasova, Anna Petrasova, Vaclav Petras, Justyna Jeziorska, Thomas Zajkowski</h4>
-    <h4 style="margin-top: 1em"> Center for Geospatial Analytics, North Carolina State University</h4>
+    <h4 style="margin-top: 1em">North Carolina State University, Raleigh, NC</h4>
+    <h4> Center for Geospatial Analytics, 
+         Department of Marine, Earth and Atmospheric Sciences, 
+         NextGen Air Transportation </h4>
+    <h4>Wroclaw University, Poland</h4>
 <p>
-<img style="margin-top: 2em" height="150" src="img/grasslogo_vector_big.png">
 </section>
 
 <section>
-    <h2 style="margin-bottom: 1em">Spatiotemporal modeling of processes </h2>
+    <h3>Advances in 3D mapping</h3>
+<ul>
+<li>Lidar and sUAS: increased capacity to
+map 3D landscapes and assess the change on (almost) continuous basis
+<li>Improved prediction of flooding and surface water flow
+</ul>
 <p>
-   Path sampling method for solving the flow continuity equations 
-<p>
-    <img height="300" src="img/balsam_sideimg.png"> &nbsp; &nbsp; &nbsp; &nbsp;
-    <img height="400" src="img/fanimwalk.gif"> &nbsp; &nbsp; &nbsp; &nbsp;
-    <img height="400" src="img/fanimhhcolp.gif">
+    <img height="200" src="img/mapping.jpg">
+<!--
+    <img height="150" src="img/WRAL_liftoff2.png">
+    <img height="150" src="img/ngat2_ortho02m_3dsmall.jpg">
+-->
 </section>
 
 <section>
-    <h2 style="margin-bottom: 1em">UAS data acquisition for high resolution modeling</h2>
+    <h3>Study site</h3>
+<ul>
+<li>NCSU experimental farms: fields, service roads, forest patches and built structures.
+<li>Surveyed by airborne lidar for floodplain mapping and county planning: 2001, 2013, 2015
+<li>Research and development test area for sUAS technologies 
+</ul>
+<p>
+    <img height="300" src="img/Raleigh.jpg">
+    <img height="300" src="img/lw_farms_google.jpg">
+</section>
+
+<section>
+    <h3>Lidar data</h3>
+<ul>
+<li>Lidar survey by Leica ALS-70 in 2013 
+<li>multiple return point cloud with point density ~2 pts/m<sup style="small">2</sup>
+<li>DEM and DSM interpolated at 0.3m resolution
+</ul>
+<p>
+    <img height="200" src="img/lidar_points.png">
+    <img height="350" src="img/lidar_dsm_uavarea.jpg">
+</section>
+
+<section>
+    <h3>sUAS data </h3>
+<ul>
+<li> NGAT Trimble UX5 system, flying at 138m, camera 4900 x 3200 
+<li> Orthophoto (0.04 m res.) and Digital Surface Model (DSM, 0.18 m res, 172 pts/m<sup>2</sup>.)
+<li> Repeated surveys (bi-weekly) for crop growth monitoring
+</ul>
+<p>
+    <img width=15% src="img/WRAL_liftoff2.png"> &nbsp;
+    <img width=35% src="img/ngat2_ortho02m_3dsmall.jpg">
+    <img width=35% src="img/ngat2_dem02m_3d.jpg">
+</section>
+
+<section>
+    <h3>sUAS data properties</h3>
 <p>
 <ul>
-<p><li>NGAT Trimble UX5 system at NCSU Lake Wheeler experimental farms
-<p><li> Orthophoto (3cm res.) draped over a Digital Surface Model (DSM, 15cm res.)
+<li> image overlap > 9, almost 1 million tie points
+<li> processed by AGISOFT and Trimble
+<li> 12 GCPs installed to improve accuracy 
+</ul>
+<p>
+    <img height=150 src="img/errorlg.png">
+    <img width=300 src="img/errorimg.png">
+    <img width=300 src="img/GCP_imagery.jpg">
+<p>
+<font size=2> distribution of vertical and horizontal error, avg. camera error 0.3,1.9,0.6 m</font>
+</section>
+
+<section>
+    <h3>sUAS data comparison</h3>
+<p>
+<ul>
+<li> AGISOFT without and with GCPs 
+<li> AGISOFT and Trimble comparison, bowl effect and swath shifts
+</ul>
+<p>
+    <img width=45% src="img/DSM_comparison_NGAT_Agisoft.pdf">
+</section>
+
+<section>
+    <h3>Lidar and sUAS data comparison</h3>
+<p>
+<ul>
+<li> lidar and uas difference maps, mean/median difference in open field
+<li> reflects mapping errors but also terrain changes between 2013 and 2014
+<li> REPLACE below map (dif demo flight uas and lidar - shows bowl effect)
+with a map showing diff between lidar and improved sUAS processed with GCP 
+</ul>
+<p>
+   <img height=300 src="img/diffmap_uav2_lidg.png">
+</section>
+
+<section>
+    <h3>LCP MFD flowrouting  </h3>
+<ul>
+<li> least cost path  MFD method - needed for DSMs with many true depressions
+<li> REPLACE IMAGE some explanation here, ref to MM paper
+<li> improved representation of streams
+</ul>
+    <img height=200 src="img/stream_extraction_lidarc.png">
+</section>
+
+<section>
+    <h3>Watershed analysis based on lidar DEM  </h3>
+<ul>
+<li> LCP MFD flowtracing for watershed boundaries and streams
+<li> shows the watershed extending beyond UAV mapped area
+<li> improved representation of streams 
+</ul>
+    <img height=250 src="img/lid_watershed_accum.jpg">
+    <img height=250 src="img/lidar_basins_image.jpg">
+    <img height=200 src="img/stream_extraction_lidarc.png">
+</section>
+
+<section>
+    <h3>Watershed analysis based on sUAS DSM </h3>
+<ul>
+<li>LCP MFD flowtracing - includes dispersed water but no accumulated water in depressions
+(add img)
+<li>watershed boundaries (color) compared with lidar (lines)
+</ul>
+<p>
+    <img width=50% src="img/trimsh_lid_wshdbound500k.jpg">
+</section>
+
+<section>
+    <h3>LCP MFD flowaccumulation: lidar, sUAS </h3>
+<p>
+<ul>
+<p><li>level of detail and noise influence the LCP MFD flowrouting (0.3m, 0.3m, 0.18m)
+<p><li>Tillage impact can be captured directly, based on microtopography captured by sUAS 
+</ul>
+<p>
+    <img width=90% src="img/flowaccum_lid_ngat_trimb_zoom.jpg">
+</section>
+
+<section>
+    <h3>Watershed analysis on fused UAS DSM  and lidar DEM </h3>
+<p>
+<ul>
+<li>patch or reinterpolate the fused DSM at 0.2 or 0.3m resolution
+<li> compare results, show smooth flow along the border of the patched area
+<li> ADD FIGURE
 </ul>
 <p>
 <br>
-    <img height=400 src="img/WRAL_liftoff2.png"> &nbsp; &nbsp; &nbsp; &nbsp;
-    <img height=400 src="img/ngat2_ortho02m_3dsmall.jpg">
-<p>Data acquired by NCSU NGAT, processed by Justyna Jeziorska, U. Wroclaw</p>
+   <img height=200 src="img/diffmap_uav2_lidg.png">
 </section>
 
 <section>
-    <h2 style="margin-bottom: 1em">UAS DSM and water flow modeling  </h2>
+    <h3>Path sampling method for flow simulations </h3>
+<p>
+   Robust stochastic method for rough surfaces
+<p>
+    <img width=40% src="img/fanimwalk.gif"> &nbsp; &nbsp; &nbsp; &nbsp;
+    <img width=40% src="img/fanimhhcolp.gif">
+</section>
+
+<section>
+    <h3>Simulated water depth on sUAS DSM </h3>
 <p>
 <ul>
-<p><li>DSM of tilled fields at NCSU Lake Wheeler experimental farms
-<p><li>Simulated surface water depth captures flow redirection by tillage
+<li>Simulated surface water depth captures flow redirection by tillage
+<li>Shifts between swaths on Trimble processed DSM leads to artificial flow pattern
 </ul>
 <p>
 <br>
-    <img height=480 src="img/ngat2_dem02m_3d.jpg"> 
+    <img width=40% src="img/trimb_depth120.jpg">
     &nbsp; &nbsp; &nbsp; &nbsp;
-    <img height=400 src="img/ngat2_simweflowdepth_3dsm.jpg">
+    <img width=40% src="img/ngat2_simweflowdepth_3dsm.jpg">
 <!--    <img height=200 src="img/diffmap_uav2_lidg.png">-->
+</section>
+
+<section>
+    <h3>Simulated water depth on sUAS DSM </h3>
+<p>
+<ul>
+<li> Flow redirection by tillage, dispersion and accumulation
+</ul>
+<p>
+<br>
+    <img height=350 src="img/anim_water03m.gif">
+</section>
+
+<section>
+    <h3>Conclusions </h3>
+<p>
+<ul>
+<li> GCP crucial for proper DSM geometry
+<li> High level of detail requires robust flowrouting that can handle depressions
+</ul>
 </section>
 
 <section>
@@ -366,7 +374,6 @@
 <ul>
 <p><li>NCSU Open Source Geospatial Research and Education Laboratory
 <p><li>Member of Geo4all initiative: global network for foss4g education</li>
-<p><li>91 labs on all continents</li>
 <p><li>NCSU NA leading lab: GRASS GIS development, courses, research projects </li>
 <p><li>GitHub: https://github.com/ncsu-osgeorel
 </ul>
