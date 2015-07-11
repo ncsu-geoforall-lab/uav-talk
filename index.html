@@ -240,29 +240,43 @@ map 3D landscapes and assess the change on (almost) continuous basis
 </section>
 
 <section>
-    <h3>sUAS data comparison</h3>
+    <h3>sUAS data processing: GCP</h3>
 <p>
-DSM difference: without and with GCPs (AGISOFT) 
+Registration without and with GCPs (AGISOFT) 
     <img width=70% src="img/DSM_comparison_NGAT_Agisoft.pdf">
 </section>
 
 <section>
-    <h3>sUAS data comparison</h3>
+    <h3>sUAS data processing: GCP</h3>
 <p>
-DSM difference: processed by AGISOFT, Trimble, OSM
-    <img width=60% src="img/diff_trimb_ngat.jpg">
-<!--    <img width=70% src="img/diff_osm_agisoft.jpg">-->
+DSM difference: without and with GCPs (AGISOFT)
+<br>(mean=0.06m, mean_abs=2.8m)
+    <img width=50% src="img/diff_DEM_GCPyesno_bowlall.jpg">
+    <img width=35% src="img/diff_DEM_GCPyesno_bowlzoom.jpg">
+</section>
+
+<section>
+    <h3>sUAS data processing comparison</h3>
+AGI - Trimble <font size=1>mean=-0.14m, mean_abs=0.30m</font> 
+&nbsp
+AGI - OSM <font size=1>mean=XXX, mean_abs=XX</font>
+<br>bare fields < 15cm dif, corn < 50cm dif, slight NS tilt
+<br>open source important for understanding the differences
+    <img width=40% src="img/diff_trimb_agisGCPjune.jpg">
+   <img width=40% src="img/diff_osm_agisoft.jpg">
 </section>
 
 <section>
     <h3>Lidar and sUAS data comparison</h3>
 <p>
 <ul>
-<li> Difference map, mean difference XXXX
-<li> reflects mapping errors and terrain changes between 2013 and 2014
+<li> Lidar bare 2013 - AGISOFT_GCP 2014: mean=-0.29m, mean_abs=0.40m
+<li> reflects mapping errors and terrain/vegetation changes 
 </ul>
 <p>
-   <img height=350 src="img/diffmap_uav2_lidg.png">
+   <img width=40% src="img/diff_lid_uavGCPjune.jpg">
+    &nbsp; &nbsp; &nbsp;
+   <img width=25% src="img/diff_lid_uavGCPjune_gully.jpg">
 </section>
 
 <section>
@@ -270,7 +284,7 @@ DSM difference: processed by AGISOFT, Trimble, OSM
 <p>
 <ul>
 <p><li> DSMs with many true depressions 
-<p><li> least cost path methodi (LCP): no depression filling 
+<p><li> least cost path method (LCP): no depression filling 
 <p><li> multiple flow direction (MFD) routing: captures flow dispersion
 </ul>
 </section>
@@ -336,11 +350,23 @@ DSM difference: processed by AGISOFT, Trimble, OSM
 </section>
 
 <section>
+    <h3>Sensitivity to sUAS DSM artifacts</h3>
+Shifts between swaths on Trimble processed DSM (without GCPs?)
+ leads to artificial flow pattern
+<p>
+   <img width=40% src="img/diff_trimb_ngat.jpg">-->
+    <img width=40% src="img/trimb_depth120.jpg">
+<P>
+<font size=-1>left: difference between trimble and agisoft processed DSM without GCPs - demo flight</font>
+</section>
+
+<section>
     <h3>Simulated water depth on sUAS DSM </h3>
 <p>
 <ul>
 <li>Simulated surface water depth captures flow redirection by tillage
-<li>Shifts between swaths on Trimble processed DSM leads to artificial flow pattern
+<li>Comparison of flow depth for June (with corn) from agisoft and trimble
+<li>ADD NEW IMAGES
 </ul>
 <p>
 <br>
@@ -351,14 +377,27 @@ DSM difference: processed by AGISOFT, Trimble, OSM
 </section>
 
 <section>
-    <h3>Simulated water depth on sUAS DSM </h3>
+    <h3>Change in flow pattern based on sUAS data </h3>
 <p>
 <ul>
-<li> Flow redirection by tillage, dispersion and accumulation
+<li> Flowsimulation for January and June 2015 
 </ul>
+    <img height=350 src="img/agisoft_jan.jpg">
+    <img height=350 src="img/agisoft_june.jpg">
+</section>
+
+<section>
+    <h3>Evolving overland flow based on sUAS data </h3>
+<p>agisoft june
 <p>
-<br>
-    <img height=350 src="img/anim_water03m.gif">
+    <img width=70% src="img/agisoft_june.gif">
+</section>
+
+<section>
+    <h3>Evolving overland flow based on sUAS data </h3>
+<p>trimble june
+<p>
+    <img width=70% src="img/trimble_june.gif">
 </section>
 
 <section>
@@ -367,6 +406,7 @@ DSM difference: processed by AGISOFT, Trimble, OSM
 <ul>
 <li> GCP crucial for proper DSM geometry
 <li> High level of detail requires robust flowrouting that can handle depressions
+<li> Flow routing through cornfields runs on ground and corn 
 </ul>
 </section>
 
