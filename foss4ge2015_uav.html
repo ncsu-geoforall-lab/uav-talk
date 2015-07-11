@@ -40,8 +40,10 @@ map 3D landscapes and assess the change on (almost) continuous basis
 <li>DEM and DSM interpolated at 0.3m resolution
 </ul>
 <p>
-<!--    <img height="200" src="img/lidar_points.png">-->
-    <img height="350" src="img/lidar_dsm_uavarea.jpg">
+    <img width="40%" src="img/2013_lidar_bare.jpg">
+    &nbsp;&nbsp;
+    <img width="40%" src="img/2013_lidar_surf.jpg">
+<!--    <img height="350" src="img/lidar_dsm_uavarea.jpg">-->
 </section>
 
 <section>
@@ -54,8 +56,10 @@ map 3D landscapes and assess the change on (almost) continuous basis
 </ul>
 <p>
     <img width=15% src="img/takeoff.jpg"> &nbsp;
-    <img width=35% src="img/ngat2_ortho02m_3dsmall.jpg">
     <img width=35% src="img/ngat2_dem02m_3d.jpg">
+    <img width=30% src="img/2015_06_15_DSM_GCP_3dlg.jpg">
+<p>
+winter and summer DSM
 </section>
 
 <section>
@@ -64,41 +68,42 @@ map 3D landscapes and assess the change on (almost) continuous basis
 <ul>
 <li> image overlap > 9, almost 1 million tie points
 <li> processed by AGISOFT, Trimble, OpenDroneMap
-<li> 12 GCPs installed to improve accuracy 
+<li> 11 GCPs installed to improve accuracy 
 </ul>
 <p>
     <img height=150 src="img/errorlg.png">
-    <img width=300 src="img/errorimg.png">
-    <img width=300 src="img/GCP_imagery.jpg">
+    <img width=320 src="img/errorimg.png">
+    <img width=320 src="img/GCP_imagery.jpg">
 <p>
 <font size=2> distribution of vertical and horizontal error, avg. camera error 0.3,1.9,0.6 m</font>
 </section>
 
+<!--
 <section>
     <h3>sUAS data processing: GCP</h3>
 <p>
 Registration without and with GCPs (AGISOFT) 
-    <img width=70% src="img/DSM_comparison_NGAT_Agisoft.pdf">
+    <img width=70% src="img/DSM_comparison_NGAT_Agisoft.jpg">
 </section>
+-->
 
 <section>
     <h3>sUAS data processing: GCP</h3>
 <p>
-DSM difference: without and with GCPs (AGISOFT)
-<br>(mean=0.06m, mean_abs=2.8m)
+Difference between DSM processed without GCPs and with 11 GCPs (AGISOFT)
+<br>(mean=0.06m, mean_abs=2.8m, bowl effect)
     <img width=50% src="img/diff_DEM_GCPyesno_bowlall.jpg">
     <img width=35% src="img/diff_DEM_GCPyesno_bowlzoom.jpg">
 </section>
 
 <section>
     <h3>sUAS data processing comparison</h3>
-AGI - Trimble <font size=1>mean=-0.14m, mean_abs=0.30m</font> 
-&nbsp
-AGI - OSM <font size=1>mean=XXX, mean_abs=XX</font>
+AGI - Trimble: mean=-0.14m, mean_abs=0.30m, 
 <br>bare fields < 15cm dif, corn < 50cm dif, slight NS tilt
-<br>open source important for understanding the differences
-    <img width=40% src="img/diff_trimb_agisGCPjune.jpg">
-   <img width=40% src="img/diff_osm_agisoft.jpg">
+<br>AGI - OSM: bowl effect with ~1m errors
+<p>
+   <img width=40% src="img/diff_trimb_agisGCPjune.jpg">
+   <img width=40% src="img/diff_odm_agisGCPmarchjune.jpg">
 </section>
 
 <section>
