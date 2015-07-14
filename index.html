@@ -295,28 +295,23 @@ AGI - Trimble: mean=-0.14m, mean_abs=0.30m,
 </section>
 
 <section>
-    <h3>Watershed analysis based on lidar DEM  </h3>
+    <h3>Flow pattern analysis based on sUAS DSM  </h3>
 <ul>
-<li> Watershed boundaries, streams extracted using LCP MFD
-<li> sUAS mapping extent adjusted to entire watershed
-<li> improved representation of streams compared to county data 
+<li> LCP MFD flowtracing - includes dispersed water but no accumulated water in depressions
+<!--<li> improved representation of streams compared to county data -->
 </ul>
 <p>
-    <img height=250 src="img/lid_watershed_accum.jpg">
-    <img height=250 src="img/lidar_basins_image.jpg">
-    <img height=230 src="img/stream_extraction_lidarc.png">
+    <img width=40% src="img/accum_uavjune_03m.jpg">
+    <img width=40% src="img/accum_uavjune_03mzoom.jpg">
+<!--    <img height=230 src="img/stream_extraction_lidarc.png"> -->
 </section>
 
 <section>
-    <h3>Watershed partitioning using sUAS DSM </h3>
-<ul>
-<li> LCP MFD flowtracing - includes dispersed water but no accumulated water in depressions
-(add img)
-<li>watershed boundaries (color) compared with lidar (lines)
-</ul>
+    <h3>Watersheds from lidar and sUAS DSM </h3>
+Watershed boundaries derived on sUAS data (color) and lidar (lines):
+tillage impact is captured by sUAS
 <p>
-    <img width=45% src="img/trimsh_lid_wshdbound500k.jpg">
-    <img width=45% src="img/trimsh_lid_wshdbound500k.jpg">
+    <img width=55% src="img/basins_lid_uav.jpg">
 </section>
 
 <section>
@@ -348,7 +343,7 @@ AGI - Trimble: mean=-0.14m, mean_abs=0.30m,
 <section>
     <h3>Path sampling method for flow simulations </h3>
 <p>
-   Robust stochastic method for rough surfaces
+   Robust stochastic method for rough surfaces implemented in GRASS GIS
 <p>
     <img width=40% src="img/fanimwalk.gif"> &nbsp; &nbsp; &nbsp; &nbsp;
     <img width=40% src="img/fanimhhcolp.gif">
@@ -359,7 +354,7 @@ AGI - Trimble: mean=-0.14m, mean_abs=0.30m,
 Shifts between swaths on Trimble processed DSM (without GCPs?)
  leads to artificial flow pattern
 <p>
-   <img width=40% src="img/diff_trimb_ngat.jpg">-->
+   <img width=40% src="img/diff_trimb_ngat.jpg">
     <img width=40% src="img/trimb_depth120.jpg">
 <P>
 <font size=-1>left: difference between trimble and agisoft processed DSM without GCPs - demo flight</font>
@@ -368,39 +363,33 @@ Shifts between swaths on Trimble processed DSM (without GCPs?)
 <section>
     <h3>Simulated water depth on sUAS DSM </h3>
 <p>
-<ul>
-<li>Simulated surface water depth captures flow redirection by tillage
-<li>Comparison of flow depth for June (with corn) from agisoft and trimble
-<li>ADD NEW IMAGES
-</ul>
+Simulated surface water depth captures flow redirection by tillage and a small gully
 <p>
-<br>
-    <img width=40% src="img/trimb_depth120.jpg">
-    &nbsp; &nbsp; &nbsp; &nbsp;
-    <img width=40% src="img/ngat2_simweflowdepth_3dsm.jpg">
-<!--    <img height=200 src="img/diffmap_uav2_lidg.png">-->
+    <img width=35% src="img/gullyDSC06027.jpg">
+    &nbsp; &nbsp; &nbsp; 
+    <img width=45% src="img/field_waterdepth_simwe0008.png">
 </section>
 
 <section>
     <h3>Change in flow pattern based on sUAS data </h3>
 <p>
-<ul>
-<li> Flowsimulation for January and June 2015 
-</ul>
-    <img height=350 src="img/agisoft_jan.jpg">
-    <img height=350 src="img/agisoft_june.jpg">
+GRASS GIS flow simulation for January and June 2015 
+<p>
+    <img height=350 src="img/simwe_jan.jpg">
+    &nbsp; &nbsp; &nbsp; 
+    <img height=350 src="img/simwe_june.jpg">
 </section>
 
 <section>
     <h3>Evolving overland flow based on sUAS data </h3>
-<p>agisoft june
+<p> June DSM (AGISOFT) with flow dynamics as color map
 <p>
     <img width=70% src="img/agisoft_june.gif">
 </section>
 
 <section>
     <h3>Evolving overland flow based on sUAS data </h3>
-<p>trimble june
+<p> June DSM (Trimble) with overland flow dynamics as color map
 <p>
     <img width=70% src="img/trimble_june.gif">
 </section>
@@ -409,9 +398,11 @@ Shifts between swaths on Trimble processed DSM (without GCPs?)
     <h3>Conclusions </h3>
 <p>
 <ul>
-<li> GCP crucial for proper DSM geometry
-<li> High level of detail requires robust flowrouting that can handle depressions
-<li> Flow routing through cornfields runs on ground and corn 
+<li> GCP were crucial for accurate DSM geometry
+<li> High level of detail in DSMs requires robust flowrouting that can handle depressions
+<li> Open source based processing of sUAV data would help to understand the results
+<li> Coordinated effort is needed to develop open source sUAV data processing
+tools such as Open Drone Map   
 </ul>
 </section>
 
